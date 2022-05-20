@@ -4,7 +4,9 @@ import { Search, ShoppingCart } from "@material-ui/icons";
 import React from "react";
 
 const Container = styled.div`
-  height: 60px;
+  /* height: 60px; */
+  height: 8vh;
+
 `;
 
 const Wrapper = styled.div`
@@ -25,12 +27,11 @@ const Left = styled.div`
 const SearchContainer = styled.div`
   display: flex;
   align-items: center;
-  /* border: 0.5px solid lightgray; */
+  border: 0.5px solid lightgray;
   margin-left: 25px;
   padding: 5px;
 `;
 const Language = styled.span`
-  color: white;
   font-style: 14px;
 `;
 
