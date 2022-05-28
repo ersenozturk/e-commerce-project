@@ -124,7 +124,7 @@ const Footer = () => {
         <ContactItem>
           <Room style={{ marginRight: "10px" }} /> Buca / Izmir / Turkey        </ContactItem>
         <ContactItem>
-          <Phone style={{ marginRight: "10px" }} /> +(90) 543 52 70 82
+          <Phone style={{ marginRight: "10px" }} /> +(90) 543 582 70 82
         </ContactItem>
         <ContactItem>
           <MailOutline style={{ marginRight: "10px" }} /> 70ozturkersen@gmail.com
