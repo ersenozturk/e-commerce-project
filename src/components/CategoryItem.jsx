@@ -1,4 +1,6 @@
 import styled from "@emotion/styled";
+import { mobile } from "../responsive";
+import { tablet } from "../responsive";
 
 
 const Container = styled.div`
@@ -6,12 +8,17 @@ const Container = styled.div`
   margin: 3px;
   position: relative;
 `;
+
 const Image = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
 
+  ${mobile({ height: "20vh" })}
+  ${tablet({ height: "40vh" })}
+
 `;
+
 const Info = styled.div`
   position: absolute;
   width: 100%;
@@ -28,6 +35,8 @@ const Info = styled.div`
 const Title = styled.h1`
   color: white;
   margin-bottom: 20px;
+  ${tablet({ fontSize: "20px" })}
+
 
 `;
 const Button = styled.button`
@@ -37,6 +46,8 @@ const Button = styled.button`
   color: gray;
   cursor: pointer;
   font-weight: 600;
+  ${tablet({ fontSize: "10px", padding:'7px' })}
+
 `;
 
 

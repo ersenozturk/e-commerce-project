@@ -5,6 +5,9 @@ import {
 } from "@material-ui/icons";
 import React, { useState } from "react";
 import { sliderItems } from "../data";
+import { mobile } from "../responsive";
+import { tablet } from "../responsive";
+
 
 const Container = styled.div`
   width: 100%;
@@ -12,6 +15,7 @@ const Container = styled.div`
   display: flex;
   position: relative;
   overflow: hidden;
+  ${mobile({ display: "none" })}
 `;
 
 const Arrow = styled.div`
@@ -71,18 +75,23 @@ const InfoContainer = styled.div`
 
 const Title = styled.h2`
   font-size: 70px;
+  ${tablet({ fontSize: "40px" })}
+
 `;
 const Description = styled.p`
   font-size: 20px;
   margin: 50px 0;
   font-weight: 500;
   letter-spacing: 3px;
+  ${tablet({ fontSize: "10px" })}
+
 `;
 const Button = styled.button`
   padding: 10px;
   font-size: 20px;
   background-color: transparent;
   cursor: pointer;
+  ${tablet({ fontSize: "15px" })}
 `;
 
 const Slider = () => {
