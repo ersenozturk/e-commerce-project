@@ -1,7 +1,6 @@
 import styled from "@emotion/styled"
 import {mobile} from "../responsive";
 
-
 const Container = styled.div`
   width: 100vw;
   height: 100vh;
